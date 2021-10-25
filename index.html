@@ -1,0 +1,110 @@
+Last login: Mon Oct 25 12:37:22 on ttys000
+juliabanerjee@Julias-MacBook-Pro ~ % ls
+Desktop		Downloads	Movies		Pictures
+Documents	Library		Music		Public
+juliabanerjee@Julias-MacBook-Pro ~ % cd documents
+juliabanerjee@Julias-MacBook-Pro documents % mkdir sandbox
+juliabanerjee@Julias-MacBook-Pro documents % cd sandbox
+juliabanerjee@Julias-MacBook-Pro sandbox % mkdir kennels
+juliabanerjee@Julias-MacBook-Pro sandbox % cd kennels 
+juliabanerjee@Julias-MacBook-Pro kennels % mkdir dogs
+juliabanerjee@Julias-MacBook-Pro kennels % mkdir people
+juliabanerjee@Julias-MacBook-Pro kennels % cd dogs
+juliabanerjee@Julias-MacBook-Pro dogs % touch cockapoo.txt
+juliabanerjee@Julias-MacBook-Pro dogs % touch Dachshund.txt
+juliabanerjee@Julias-MacBook-Pro dogs % touch poodle.txt
+juliabanerjee@Julias-MacBook-Pro dogs % cd people
+cd: no such file or directory: people
+juliabanerjee@Julias-MacBook-Pro dogs % cd kennels
+cd: no such file or directory: kennels
+juliabanerjee@Julias-MacBook-Pro dogs % clear
+
+
+
+
+juliabanerjee@Julias-MacBook-Pro dogs % ls
+Dachshund.txt	cockapoo.txt	poodle.txt
+juliabanerjee@Julias-MacBook-Pro dogs % pwd
+/Users/juliabanerjee/documents/sandbox/kennels/dogs
+juliabanerjee@Julias-MacBook-Pro dogs % cd ..documents
+cd: no such file or directory: ..documents
+juliabanerjee@Julias-MacBook-Pro dogs % cd ../kennels
+cd: no such file or directory: ../kennels
+juliabanerjee@Julias-MacBook-Pro dogs % cd..
+zsh: command not found: cd..
+juliabanerjee@Julias-MacBook-Pro dogs % cd ..
+juliabanerjee@Julias-MacBook-Pro kennels % cd ..
+juliabanerjee@Julias-MacBook-Pro sandbox % cd kennels
+juliabanerjee@Julias-MacBook-Pro kennels % cd people
+juliabanerjee@Julias-MacBook-Pro people % touch Bob.txt
+juliabanerjee@Julias-MacBook-Pro people % touch Mel.txt
+juliabanerjee@Julias-MacBook-Pro people % cd ..
+juliabanerjee@Julias-MacBook-Pro kennels % cd ..
+juliabanerjee@Julias-MacBook-Pro sandbox % cd ..
+juliabanerjee@Julias-MacBook-Pro documents % cd ..
+juliabanerjee@Julias-MacBook-Pro ~ % cd documents
+juliabanerjee@Julias-MacBook-Pro documents % mkdir development
+juliabanerjee@Julias-MacBook-Pro documents % mkdir course work-nology
+juliabanerjee@Julias-MacBook-Pro documents % cd course work-nology
+cd: string not in pwd: course
+juliabanerjee@Julias-MacBook-Pro documents % cd coursework-nology
+juliabanerjee@Julias-MacBook-Pro coursework-nology % git clonehttps://github.com/juliabanerjee/webfundamentals.git
+git: 'clonehttps://github.com/juliabanerjee/webfundamentals.git' is not a git command. See 'git --help'.
+juliabanerjee@Julias-MacBook-Pro coursework-nology % clone git
+zsh: command not found: clone
+juliabanerjee@Julias-MacBook-Pro coursework-nology % git clone https://github.com/juliabanerjee/webfundamentals.git
+Cloning into 'webfundamentals'...
+warning: You appear to have cloned an empty repository.
+juliabanerjee@Julias-MacBook-Pro coursework-nology % touch index.html
+juliabanerjee@Julias-MacBook-Pro coursework-nology % cd webfundamentals
+juliabanerjee@Julias-MacBook-Pro webfundamentals % touch index.html
+juliabanerjee@Julias-MacBook-Pro webfundamentals % touch styless.css
+juliabanerjee@Julias-MacBook-Pro webfundamentals % git push
+error: src refspec refs/heads/master does not match any
+error: failed to push some refs to 'https://github.com/juliabanerjee/webfundamentals.git'
+juliabanerjee@Julias-MacBook-Pro webfundamentals % git push origin master 
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/juliabanerjee/webfundamentals.git'
+juliabanerjee@Julias-MacBook-Pro webfundamentals % ls
+index.html	styless.css
+juliabanerjee@Julias-MacBook-Pro webfundamentals % git add index.html
+juliabanerjee@Julias-MacBook-Pro webfundamentals % git add styless.css
+juliabanerjee@Julias-MacBook-Pro webfundamentals % git commit -m "first commit"
+[master (root-commit) ef3a64b] first commit
+ Committer: Julia Banerjee <juliabanerjee@Julias-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+ create mode 100644 styless.css
+juliabanerjee@Julias-MacBook-Pro webfundamentals % git push origin master
+Username for 'https://github.com': juliabanerjee
+Password for 'https://juliabanerjee@github.com': 
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 242 bytes | 242.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/juliabanerjee/webfundamentals.git
+ * [new branch]      master -> master
+juliabanerjee@Julias-MacBook-Pro webfundamentals % git clone https://github.com/juliabanerjee/git-practice-repo.git
+Cloning into 'git-practice-repo'...
+warning: You appear to have cloned an empty repository.
+juliabanerjee@Julias-MacBook-Pro webfundamentals % cd ..
+juliabanerjee@Julias-MacBook-Pro coursework-nology % git clone https://github.com/juliabanerjee/git-practice-repo.git
+Cloning into 'git-practice-repo'...
+warning: You appear to have cloned an empty repository.
+juliabanerjee@Julias-MacBook-Pro coursework-nology % cd git-practice-repo
+juliabanerjee@Julias-MacBook-Pro git-practice-repo % touch juliaindex.html
+juliabanerjee@Julias-MacBook-Pro git-practice-repo % 
